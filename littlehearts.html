@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Little Hearts — Ingredient Analysis</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+      <span class="logo-icon">🍟</span>
+      <span>Nutri<strong>Relief</strong></span>
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="lays.html">Lay's Chips</a></li>
+      <li><a href="littlehearts.html" class="active">Little Hearts</a></li>
+    </ul>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <header class="page-hero page-hero-lh">
+    <div class="page-hero-inner">
+      <div class="product-eyebrow">Product Analysis #2</div>
+      <h1>Britannia<br /><em>Little Hearts</em></h1>
+      <p>Manufactured by Britannia Industries. Marketed heavily toward children, Little Hearts is one of India's best-loved biscuit brands — but its ingredient list tells a less loveable story.</p>
+
+      <!-- HEALTH RATING -->
+      <div class="health-rating-card">
+        <div class="rating-label">Overall Health Rating</div>
+        <div class="rating-stars">
+          <span class="star filled">★</span>
+          <span class="star filled">★</span>
+          <span class="star half">★</span>
+          <span class="star empty">★</span>
+          <span class="star empty">★</span>
+        </div>
+        <div class="rating-score">2.5 / 5</div>
+        <div class="rating-verdict verdict-poor">Below Average — Discretionary consumption only</div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+
+    <!-- INTRO BODY -->
+    <section class="section">
+      <div class="section-label">Overview</div>
+      <div class="two-col">
+        <div>
+          <h2>The Sweet Snack With a Bitter Truth</h2>
+        </div>
+        <div class="body-col">
+          <p>Britannia Little Hearts biscuits are heart-shaped, lightly sugared snacks that have been a staple of Indian childhood for decades. They are positioned as a "light" and "fun" snack, and their small, poppable shape makes portion control almost impossible in practice.</p>
+          <p>The base of these biscuits is <strong>refined wheat flour (maida)</strong> — one of the most nutritionally empty carbohydrate sources available. Combined with <strong>sugar, palm oil, and artificial flavouring agents</strong>, the product delivers empty calories with minimal micronutrient value and several documented risks for regular, long-term consumers.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- INGREDIENT TABLE -->
+    <section class="section">
+      <div class="section-label">Ingredient Breakdown</div>
+      <h2 class="section-h2">Full Ingredient Analysis</h2>
+      <p class="section-body">Ingredients are listed in order of proportion as declared on the Britannia Little Hearts (75g pack) label. Risk levels are based on FSSAI, WHO, and nutritional literature.</p>
+
+      <div class="table-wrapper">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Ingredient</th>
+              <th>Purpose</th>
+              <th>Quantity (approx.)</th>
+              <th>Risk Level</th>
+              <th>Health Concern</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!--
+              ✏️ EDIT INGREDIENT DATA BELOW
+              Risk Level options: Safe | Moderate | High
+            -->
+            <tr>
+              <td class="row-num">01</td>
+              <td class="name-cell"><strong>Refined Wheat Flour (Maida)</strong></td>
+              <td>Base / structure</td>
+              <td>~48–52%</td>
+              <td><span class="risk risk-high">High</span></td>
+              <td>Stripped of fibre and nutrients during processing; causes rapid blood sugar spikes; linked to insulin resistance.</td>
+            </tr>
+            <tr>
+              <td class="row-num">02</td>
+              <td class="name-cell"><strong>Sugar</strong></td>
+              <td>Sweetener / flavour</td>
+              <td>~18–22%</td>
+              <td><span class="risk risk-high">High</span></td>
+              <td>Refined sugar with zero nutritional value; drives tooth decay, obesity, fatty liver disease, and type 2 diabetes.</td>
+            </tr>
+            <tr>
+              <td class="row-num">03</td>
+              <td class="name-cell"><strong>Palm Oil</strong></td>
+              <td>Fat / texture / shelf life</td>
+              <td>~15–18%</td>
+              <td><span class="risk risk-high">High</span></td>
+              <td>High saturated fat content raises LDL cholesterol; major contributor to cardiovascular disease risk.</td>
+            </tr>
+            <tr>
+              <td class="row-num">04</td>
+              <td class="name-cell"><strong>Invert Syrup</strong></td>
+              <td>Sweetener / moisture retention</td>
+              <td>~5%</td>
+              <td><span class="risk risk-moderate">Moderate</span></td>
+              <td>A form of processed sugar; contributes to glycaemic load; adds "hidden sugar" beyond what plain sugar indicates.</td>
+            </tr>
+            <tr>
+              <td class="row-num">05</td>
+              <td class="name-cell"><strong>Leavening Agents (E503, E500)</strong></td>
+              <td>Texture / rising</td>
+              <td>~1–2%</td>
+              <td><span class="risk risk-safe">Safe</span></td>
+              <td>Ammonium bicarbonate and sodium bicarbonate; generally recognised as safe in typical quantities.</td>
+            </tr>
+            <tr>
+              <td class="row-num">06</td>
+              <td class="name-cell"><strong>Salt</strong></td>
+              <td>Flavour enhancer</td>
+              <td>~1%</td>
+              <td><span class="risk risk-moderate">Moderate</span></td>
+              <td>Adds to cumulative daily sodium intake; exacerbates blood pressure issues in susceptible individuals.</td>
+            </tr>
+            <tr>
+              <td class="row-num">07</td>
+              <td class="name-cell"><strong>Emulsifier (Soya Lecithin, E322)</strong></td>
+              <td>Texture / binding</td>
+              <td>Trace</td>
+              <td><span class="risk risk-safe">Safe</span></td>
+              <td>Derived from soy; generally safe. May be a concern for individuals with soy allergies.</td>
+            </tr>
+            <tr>
+              <td class="row-num">08</td>
+              <td class="name-cell"><strong>Artificial Flavouring Substances</strong></td>
+              <td>Taste enhancement</td>
+              <td>Trace</td>
+              <td><span class="risk risk-moderate">Moderate</span></td>
+              <td>Unspecified synthetic compounds; long-term safety data is limited; some linked to hyperactivity in children.</td>
+            </tr>
+            <tr>
+              <td class="row-num">09</td>
+              <td class="name-cell"><strong>Dough Conditioner (E472e)</strong></td>
+              <td>Texture / dough handling</td>
+              <td>Trace</td>
+              <td><span class="risk risk-moderate">Moderate</span></td>
+              <td>DATEM (diacetyl tartaric acid ester of mono and diglycerides); some animal studies suggest cardiac effects at high doses.</td>
+            </tr>
+            <tr>
+              <td class="row-num">10</td>
+              <td class="name-cell"><strong>Antioxidant (E319 / TBHQ)</strong></td>
+              <td>Preservative for oils</td>
+              <td>Trace</td>
+              <td><span class="risk risk-high">High</span></td>
+              <td>TBHQ (Tertiary Butylhydroquinone) — a petroleum-derived preservative. Linked to DNA damage and immune disruption at higher doses. Banned in Japan and EU at high concentrations.</td>
+            </tr>
+            <!-- Add more rows here if needed -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- NUTRITIONAL BREAKDOWN -->
+    <section class="section">
+      <div class="section-label">Nutrition Facts</div>
+      <h2 class="section-h2">Per 37.5g Serving (Half Pack)</h2>
+      <div class="nutrition-grid">
+        <div class="nutrition-card nc-red">
+          <div class="nc-value">180</div>
+          <div class="nc-label">Calories (kcal)</div>
+          <div class="nc-note">~9% of daily 2000 kcal diet</div>
+        </div>
+        <div class="nutrition-card nc-orange">
+          <div class="nc-value">8g</div>
+          <div class="nc-label">Total Fat</div>
+          <div class="nc-note">Primarily saturated from palm oil</div>
+        </div>
+        <div class="nutrition-card nc-orange">
+          <div class="nc-value">10g</div>
+          <div class="nc-label">Total Sugar</div>
+          <div class="nc-note">~25% of daily free sugar limit (WHO)</div>
+        </div>
+        <div class="nutrition-card nc-yellow">
+          <div class="nc-value">26g</div>
+          <div class="nc-label">Carbohydrates</div>
+          <div class="nc-note">Almost entirely from refined maida</div>
+        </div>
+        <div class="nutrition-card nc-green">
+          <div class="nc-value">2.5g</div>
+          <div class="nc-label">Protein</div>
+          <div class="nc-note">Minimal; low quality plant protein</div>
+        </div>
+        <div class="nutrition-card nc-green">
+          <div class="nc-value">&lt;1g</div>
+          <div class="nc-label">Dietary Fibre</div>
+          <div class="nc-note">Negligible — maida removes all fibre</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HEALTH IMPACT -->
+    <section class="section impact-section">
+      <div class="section-label">Health Impact</div>
+      <h2 class="section-h2">What Excessive Consumption Does</h2>
+      <div class="impact-list">
+        <div class="impact-item">
+          <div class="impact-icon impact-red">🧠</div>
+          <div>
+            <h3>Blood Sugar Spikes & Insulin Resistance</h3>
+            <p>Maida has a Glycaemic Index (GI) of approximately 85 — almost as high as pure glucose (GI 100). Combined with refined sugar and invert syrup, a serving of Little Hearts causes a rapid, dramatic blood sugar spike. Over time, repeated exposure to such spikes degrades the body's insulin sensitivity, paving the way for Type 2 Diabetes — a condition now increasingly diagnosed in Indian adolescents.</p>
+          </div>
+        </div>
+        <div class="impact-item">
+          <div class="impact-icon impact-orange">🦷</div>
+          <div>
+            <h3>Dental Decay</h3>
+            <p>Little Hearts combines two primary drivers of tooth decay: refined sugar and refined starch. Both are readily fermented by oral bacteria, producing acids that demineralise tooth enamel. The biscuits' small, crunchy texture means particles lodge easily between teeth. Regular consumption — especially without brushing — contributes significantly to cavities and early enamel erosion, particularly in children.</p>
+          </div>
+        </div>
+        <div class="impact-item">
+          <div class="impact-icon impact-red">🏥</div>
+          <div>
+            <h3>Non-Alcoholic Fatty Liver Disease (NAFLD)</h3>
+            <p>The combination of high refined sugar (especially fructose from invert syrup) and palm oil saturated fat is a well-documented driver of fat accumulation in the liver. NAFLD is now the most common liver condition in India, affecting children as young as 8–10 years. Snacks like Little Hearts — consumed daily by many school-going children — are significant contributors to this epidemic.</p>
+          </div>
+        </div>
+        <div class="impact-item">
+          <div class="impact-icon impact-orange">⚗️</div>
+          <div>
+            <h3>Risks from TBHQ (E319)</h3>
+            <p>TBHQ is a synthetic antioxidant derived from butane (a component of petroleum). It is used to extend the shelf life of oils in processed foods. While present in trace amounts, TBHQ has been shown in some studies to cause DNA strand breaks, promote tumour growth in animal models, and impair immune function. It has been banned or severely restricted in Japan, EU-regulated foods for infants, and several other markets. Its presence in a product heavily marketed to children warrants serious concern.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONCLUSION -->
+    <section class="conclusion-box">
+      <div class="conclusion-rating">
+        <span class="star filled">★</span><span class="star filled">★</span>
+        <span class="star half">★</span>
+        <span class="star empty">★</span><span class="star empty">★</span>
+        <span class="rating-num-sm">2.5/5</span>
+      </div>
+      <h3>Our Verdict on Little Hearts</h3>
+      <p>Britannia Little Hearts scores marginally higher than Lay's primarily because it does not produce acrylamide through high-temperature frying. However, its cocktail of refined maida, refined sugar, palm oil, TBHQ, and artificial flavourings makes it a nutritionally poor and potentially harmful product when consumed habitually. The fact that it is disproportionately marketed to and consumed by children makes this a public health concern that deserves greater regulatory attention.</p>
+    </section>
+
+    <div class="page-nav-row">
+      <a href="lays.html" class="btn-outline">← Back to Lay's</a>
+      <a href="index.html" class="btn-red">Back to Home →</a>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-icon">🍟</span>
+        <span class="footer-title">NutriRelief</span>
+        <span class="footer-sub">FUTURIX 7.00 · 2026</span>
+      </div>
+      <div class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="lays.html">Lay's Chips</a>
+        <a href="littlehearts.html">Little Hearts</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="nav.js"></script>
+</body>
+</html>

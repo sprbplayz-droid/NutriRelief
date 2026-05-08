@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lay's Chips — Ingredient Analysis</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+      <span class="logo-icon">🍟</span>
+      <span>Nutri<strong>Relief</strong></span>
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="lays.html" class="active">Lay's Chips</a></li>
+      <li><a href="littlehearts.html">Little Hearts</a></li>
+    </ul>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <header class="page-hero page-hero-lays">
+    <div class="page-hero-inner">
+      <div class="product-eyebrow">Product Analysis #1</div>
+      <h1>Lay's Classic<br /><em>Salted Chips</em></h1>
+      <p>Manufactured by PepsiCo India. One of the best-selling snack products in India, consumed by an estimated 8 crore people weekly.</p>
+
+      <!-- HEALTH RATING -->
+      <div class="health-rating-card">
+        <div class="rating-label">Overall Health Rating</div>
+        <div class="rating-stars">
+          <span class="star filled">★</span>
+          <span class="star filled">★</span>
+          <span class="star empty">★</span>
+          <span class="star empty">★</span>
+          <span class="star empty">★</span>
+        </div>
+        <div class="rating-score">2 / 5</div>
+        <div class="rating-verdict verdict-poor">Poor — Regular consumption not recommended</div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+
+    <!-- INTRO BODY -->
+    <section class="section">
+      <div class="section-label">Overview</div>
+      <div class="two-col">
+        <div>
+          <h2>A Closer Look at India's Favourite Snack</h2>
+        </div>
+        <div class="body-col">
+          <p>Lay's chips are marketed as a light snack available in a variety of flavours. The Classic Salted variant appears straightforward, but an analysis of its ingredient label reveals several components that pose health concerns — particularly for children and people with cardiovascular conditions.</p>
+          <p>The product is deep-fried in palm oil, heavily salted, and uses flavour enhancers classified under the E-number system. While individual ingredients may appear within permissible limits, the cumulative effect of regular consumption paints a troubling picture.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- INGREDIENT TABLE -->
+    <section class="section">
+      <div class="section-label">Ingredient Breakdown</div>
+      <h2 class="section-h2">Full Ingredient Analysis</h2>
+      <p class="section-body">Ingredients are listed in order of proportion as declared on the Lay's Classic Salted (26g pack) label. Risk levels are assigned based on FSSAI, WHO, and EFSA classifications.</p>
+
+      <div class="table-wrapper">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Ingredient</th>
+              <th>Purpose</th>
+              <th>Quantity (approx.)</th>
+              <th>Risk Level</th>
+              <th>Health Concern</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!--
+              ✏️ EDIT INGREDIENT DATA BELOW
+              Risk Level options: Safe | Moderate | High
+            -->
+            <tr>
+              <td class="row-num">01</td>
+              <td class="name-cell"><strong>Potatoes</strong></td>
+              <td>Base ingredient</td>
+              <td>~65–70%</td>
+              <td><span class="risk risk-safe">Safe</span></td>
+              <td>Natural whole food; nutritious in unprocessed form.</td>
+            </tr>
+            <tr>
+              <td class="row-num">02</td>
+              <td class="name-cell"><strong>Palm Oil</strong></td>
+              <td>Frying medium</td>
+              <td>~25–30%</td>
+              <td><span class="risk risk-high">High</span></td>
+              <td>High in saturated fat; raises LDL cholesterol; linked to cardiovascular disease.</td>
+            </tr>
+            <tr>
+              <td class="row-num">03</td>
+              <td class="name-cell"><strong>Salt (Sodium Chloride)</strong></td>
+              <td>Flavouring / preservative</td>
+              <td>~1.5–2%</td>
+              <td><span class="risk risk-moderate">Moderate</span></td>
+              <td>Excess sodium linked to hypertension, kidney strain, and water retention.</td>
+            </tr>
+            <tr>
+              <td class="row-num">04</td>
+              <td class="name-cell"><strong>Monosodium Glutamate (MSG)</strong></td>
+              <td>Flavour enhancer (E621)</td>
+              <td>&lt;1%</td>
+              <td><span class="risk risk-moderate">Moderate</span></td>
+              <td>Can trigger headaches, nausea in sensitive individuals; debate ongoing in research.</td>
+            </tr>
+            <tr>
+              <td class="row-num">05</td>
+              <td class="name-cell"><strong>Acidity Regulator (E330)</strong></td>
+              <td>pH control / preservative</td>
+              <td>Trace</td>
+              <td><span class="risk risk-safe">Safe</span></td>
+              <td>Citric acid; generally safe in small quantities.</td>
+            </tr>
+            <tr>
+              <td class="row-num">06</td>
+              <td class="name-cell"><strong>Antioxidant (E306)</strong></td>
+              <td>Preserves oil freshness</td>
+              <td>Trace</td>
+              <td><span class="risk risk-safe">Safe</span></td>
+              <td>Tocopherol-rich extract; considered safe and even beneficial.</td>
+            </tr>
+            <tr>
+              <td class="row-num">07</td>
+              <td class="name-cell"><strong>Acrylamide (formed during frying)</strong></td>
+              <td>Byproduct (not added)</td>
+              <td>Variable</td>
+              <td><span class="risk risk-high">High</span></td>
+              <td>Classified as a probable human carcinogen by IARC. Forms when starchy foods are cooked at high temperatures.</td>
+            </tr>
+            <tr>
+              <td class="row-num">08</td>
+              <td class="name-cell"><strong>Starch (from potato)</strong></td>
+              <td>Texture / binding</td>
+              <td>Minor</td>
+              <td><span class="risk risk-moderate">Moderate</span></td>
+              <td>Refined starch raises glycaemic index; contributes to rapid blood sugar spikes.</td>
+            </tr>
+            <!-- Add more rows here if needed -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- NUTRITIONAL BREAKDOWN -->
+    <section class="section">
+      <div class="section-label">Nutrition Facts</div>
+      <h2 class="section-h2">Per 26g Serving (as recommended)</h2>
+      <div class="nutrition-grid">
+        <div class="nutrition-card nc-red">
+          <div class="nc-value">130</div>
+          <div class="nc-label">Calories (kcal)</div>
+          <div class="nc-note">~6.5% of daily 2000 kcal diet</div>
+        </div>
+        <div class="nutrition-card nc-orange">
+          <div class="nc-value">8g</div>
+          <div class="nc-label">Total Fat</div>
+          <div class="nc-note">Mostly saturated from palm oil</div>
+        </div>
+        <div class="nutrition-card nc-orange">
+          <div class="nc-value">170mg</div>
+          <div class="nc-label">Sodium</div>
+          <div class="nc-note">~12% of daily recommended limit</div>
+        </div>
+        <div class="nutrition-card nc-yellow">
+          <div class="nc-value">15g</div>
+          <div class="nc-label">Carbohydrates</div>
+          <div class="nc-note">High glycaemic index starch</div>
+        </div>
+        <div class="nutrition-card nc-green">
+          <div class="nc-value">1.5g</div>
+          <div class="nc-label">Protein</div>
+          <div class="nc-note">Very low nutritional contribution</div>
+        </div>
+        <div class="nutrition-card nc-green">
+          <div class="nc-value">1g</div>
+          <div class="nc-label">Dietary Fibre</div>
+          <div class="nc-note">Negligible — processing removes fibre</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HEALTH IMPACT -->
+    <section class="section impact-section">
+      <div class="section-label">Health Impact</div>
+      <h2 class="section-h2">What Excessive Consumption Does</h2>
+      <div class="impact-list">
+        <div class="impact-item">
+          <div class="impact-icon impact-red">🫀</div>
+          <div>
+            <h3>Cardiovascular Disease</h3>
+            <p>The high saturated fat content from palm oil elevates LDL ("bad") cholesterol and reduces HDL ("good") cholesterol. Over years of regular consumption, this dramatically increases the risk of atherosclerosis, heart attacks, and stroke. WHO recommends keeping saturated fat to under 10% of daily calories — one bag of Lay's can easily push you close to that limit.</p>
+          </div>
+        </div>
+        <div class="impact-item">
+          <div class="impact-icon impact-orange">🩺</div>
+          <div>
+            <h3>Hypertension & Kidney Strain</h3>
+            <p>The sodium levels in Lay's, when consumed daily, contribute significantly to high blood pressure (hypertension). The kidneys must work overtime to filter excess sodium, which over time can lead to chronic kidney disease. Children are especially vulnerable, as their kidneys are not fully developed to handle processed salt loads.</p>
+          </div>
+        </div>
+        <div class="impact-item">
+          <div class="impact-icon impact-red">⚗️</div>
+          <div>
+            <h3>Cancer Risk from Acrylamide</h3>
+            <p>Acrylamide forms naturally when potatoes are fried at temperatures above 120°C. The International Agency for Research on Cancer (IARC) classifies it as a Group 2A carcinogen — "probably carcinogenic to humans." Regular consumption of fried chips is one of the largest dietary sources of acrylamide in many populations.</p>
+          </div>
+        </div>
+        <div class="impact-item">
+          <div class="impact-icon impact-orange">⚖️</div>
+          <div>
+            <h3>Weight Gain & Metabolic Syndrome</h3>
+            <p>Chips are calorie-dense, low in fibre, and trigger the brain's reward pathways in ways that promote overconsumption. The combination of fat, salt, and refined starch is specifically engineered to be irresistible. Regular consumption is strongly associated with obesity, type 2 diabetes, and metabolic syndrome.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONCLUSION -->
+    <section class="conclusion-box">
+      <div class="conclusion-rating">
+        <span class="star filled">★</span><span class="star filled">★</span>
+        <span class="star empty">★</span><span class="star empty">★</span><span class="star empty">★</span>
+        <span class="rating-num-sm">2/5</span>
+      </div>
+      <h3>Our Verdict on Lay's Chips</h3>
+      <p>Lay's Classic Salted Chips contains ingredients that range from moderately concerning to genuinely hazardous when consumed regularly. The palm oil, sodium, and acrylamide alone present serious long-term health risks. While an occasional serving is unlikely to cause harm, daily or weekly consumption — especially among children — is strongly discouraged. Choose whole, unprocessed snack alternatives wherever possible.</p>
+    </section>
+
+    <div class="page-nav-row">
+      <a href="index.html" class="btn-outline">← Back to Home</a>
+      <a href="littlehearts.html" class="btn-red">Next: Little Hearts →</a>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-icon">🍟</span>
+        <span class="footer-title">NutriRelief</span>
+        <span class="footer-sub">FUTURIX 7.00 · 2026</span>
+      </div>
+      <div class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="lays.html">Lay's Chips</a>
+        <a href="littlehearts.html">Little Hearts</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="nav.js"></script>
+</body>
+</html>
